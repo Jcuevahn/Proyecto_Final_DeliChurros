@@ -1,0 +1,366 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffcc99;
+}
+
+header {
+    height: 80px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+#logo-container {
+    margin-right: auto;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e35b0a;
+    font-weight: bold;
+}
+
+.horizontal-scroll {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    padding: 20px;
+    background-image: url('delichurros/imagen de fondo/PreparacionDulces.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#inicio{
+    max-width: 600px;
+    padding: 20px;
+    border-radius:15px;
+    background: rgba(0,0,0,0.3);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    align-items: center;
+    height: 100vh;
+}
+
+#inicio::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.titulo-principal {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ffd700;
+}
+
+#inicio h2{
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#inicio p{
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #f8f8f8;
+}
+
+/*
+main.horizontal-scroll section {
+    flex: 0 0 100%;
+    min-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px;
+    background-color: #ffcc99;
+    color: #333;
+}
+
+main section {
+    flex: 0 0 100%;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.titulo-principal {
+    text-align: center;
+    color: #e35b0a;
+}
+
+h1, h2 {
+    color: #e35b0a;
+}
+*/
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffff;
+    color: #e35b0a;
+}
+
+/* Sobre Nosotros */
+#sobre-nosotros{
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #ffae69, #ffcc99);
+    color: #fff;
+}
+
+#sobre-nostoros .container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.intro .text{
+    flex:1;
+    max-width: 600px;
+    text-align: center;
+}
+
+.intro .text h2{
+    font-size: 2.5rem;
+    color: #e35b0a;
+    margin-bottom: 20px;
+}
+
+.intro .text p{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.intro .image{
+    flex:1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.intro .image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.about-grid{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:40px;
+}
+
+.about-item{
+    background: linear-gradient(135deg, #ffae69, #ffcc99);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.about-item h3{
+    font-size: 1.5rem;
+    color: #ffff;
+    margin-bottom:10px;
+}
+
+.about-item p{
+    font-size: 1rem;
+    line-height: 1.6;
+    color:#fff;
+}
+
+.about-item ul li{
+    font-size: 1rem;
+    line-height: 1.6;
+    color:#fff;
+    text-align: left;
+}
+
+/*galeria de productos */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:30px;
+    justify-items:center;
+}
+
+#galerioa h2{
+    font-size: 3rem;
+    color: #e35b0a;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.producto {
+    background-color: linear-gradient(135deg, #ffae69, #ffcc99);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover{
+    transform: translate(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.producto p{
+    font-size: 1.1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.producto p:last-child{
+    font-weight: bold;
+    color:#e35b0a;
+}
+
+#contacto{
+    background: linear-gradient(135deg, #ffae69, #ffcc99);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#contacto h2{
+    font-size: 2.5rem;
+    color: #f8f8f8;
+    margin-bottom: 40px;
+}
+
+.contacto-info{
+    margin-bottom:40px;
+}
+
+.contacto-info p{
+    font-size: 1.5 rem;
+    margin: 10px 0;
+}
+
+.social-links{
+    margin-top: 20px;
+}
+
+.social-icon img{
+    width:40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img{
+    transform: scale(1.1);
+}
+
+.formulario-contacto{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formulario-contacto label{
+    display: block;
+    font-size: 1rem;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size:1rem;
+}
+
+.formulario-contacto button{
+    background-color: #e35b0a;
+    color:#fff;
+    padding: 12px 20px;
+    border:none;
+    border-radius: 5px;
+    font-size:1.2rem;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover{
+    background-color: #d44f0a;
+}
